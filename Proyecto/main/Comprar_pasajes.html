@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar pasajes - Aeropuerto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="compras">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#footer">Sobre nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="Titulo_pagina">Comprar pasajes</h1>
+        <p>Compra tus pasajes de avión de manera práctica y rápida.</p>
+
+        <form action="#" method="post" autocomplete="off">
+            <div class="campo">
+                <label for="Destinos">Destino</label>
+                <select name="destino" id="Destinos" required>
+                    <option value="" selected disabled>Seleccione una provincia</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="Pasajeros">Cantidad de pasajeros</label>
+                <select name="pasajeros" id="Pasajeros" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div class="acciones">
+                <button type="button">Comprar <i class="fa-solid fa-plane"></i></button>
+            </div>
+
+            <fieldset class="campos_rellenar">
+                <legend>Datos de contacto</legend>
+                <div class="campos">
+                    <label for="nombre"></label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Nombre" required>
+                </div>
+                <div class="campos">
+                    <label for="apellido"></label>
+                    <input id="apellido" name="apellido" type="text" placeholder="Apellido" required>
+                </div>
+                <div class="campos">
+                    <label for="correo"></label>
+                    <input id="correo" name="correo" type="email" placeholder="Correo" required>
+                </div>
+                <div class="campos">
+                    <label for="telefono"></label>
+                    <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" required>
+                </div>
+                <div class="acciones">
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <p><a href="index.html">Volver</a></p>
+    </main>
+
+    <footer id="footer" class="footer">
+        <article>
+            <details>
+                <summary>Quiénes somos</summary>
+                <p>Cómo creamos esta empresa.</p>
+            </details>
+            <details>
+                <summary>Servicios</summary>
+                <p>Nuestras excursiones.</p>
+            </details>
+            <details>
+                <summary>Contacto</summary>
+                <div class="contacto">
+                    <p><button type="button">Teléfono</button></p>
+                    <p><button type="button">Whatsapp</button></p>
+                    <p><button type="button">Instagram</button></p>
+                    <p><button type="button">Facebook</button></p>
+                </div>
+            </details>
+        </article>
+    </footer>
+
+    <script src="js/manejo.js" defer></script>
+</body>
+</html>
+
+
+//prueba
